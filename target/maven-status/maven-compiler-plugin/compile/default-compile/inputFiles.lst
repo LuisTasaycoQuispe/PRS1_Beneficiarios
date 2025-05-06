@@ -1,0 +1,7 @@
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/HealthApplication.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/config/SwaggerConfig.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/model/Health.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/model/dto/HealthDTO.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/repository/HealthRepository.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/rest/HealthController.java
+/workspaces/microservicio_benef/src/main/java/pe/edu/vallegrande/health/service/HealthService.java

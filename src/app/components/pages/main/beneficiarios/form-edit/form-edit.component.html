@@ -1,0 +1,117 @@
+<!-- Modal -->
+<div *ngIf="isModalVisible" id="infoModal" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-95">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-gray-800">Información del Estudiante</h2>
+        <button (click)="closeModal()" class="text-gray-600 hover:text-gray-900">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="degreeStudy" class="block font-medium text-gray-700">Nivel de Estudio:</label>
+          <input id="degreeStudy" type="text" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.degreeStudy">
+        </div>
+        <div>
+          <label for="gradeBook" class="block font-medium text-gray-700">Grado:</label>
+          <input id="gradeBook" type="text" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.gradeBook">
+        </div>
+        <div>
+          <label for="gradeAverage" class="block font-medium text-gray-700">Promedio de Calificaciones:</label>
+          <input id="gradeAverage" type="number" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.gradeAverage">
+        </div>
+        <div>
+          <label for="fullNotebook" class="block font-medium text-gray-700">Cuaderno Completo:</label>
+          <select id="fullNotebook" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.fullNotebook">
+              <option value="Completo">Completo</option>
+              <option value="Incompleto">Incompleto</option>
+          </select>
+      </div>
+      <div>
+          <label for="assistance" class="block font-medium text-gray-700">Asistencia:</label>
+          <select id="assistance" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.assistance">
+              <option value="Regular">Regular</option>
+              <option value="Buena">Buena</option>
+              <option value="Mala">Mala</option>
+          </select>
+      </div>
+      <div>
+          <label for="tutorials" class="block font-medium text-gray-700">Tutoriales:</label>
+          <select id="tutorials" class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedEducation.tutorials">
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+          </select>
+      </div>
+      </div>
+      <div class="mt-6 text-right">
+        <button (click)="saveChanges()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Modal en form-edit.component.html -->
+  <div *ngIf="isHealthModalVisible" id="healthModal" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-95">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-gray-800">Información de Salud</h2>
+        <button (click)="closeHealthModal()" class="text-gray-600 hover:text-gray-900">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block font-medium text-gray-700">Vacuna:</label>
+          <select class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedHealth.vaccine">
+            <option value="Esquema Completo">Esquema Completo</option>
+            <option value="Incompleto">Incompleto</option>
+            <option value="Sin información">Sin información</option>
+          </select>
+      </div>
+      <div>
+          <label class="block font-medium text-gray-700">VPH:</label>
+          <select class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedHealth.vph">
+            <option value="Aplicada">Aplicada</option>
+            <option value="No aplicada">No aplicada</option>
+            <option value="Sin información">Sin información</option>
+          </select>
+      </div>
+      <div>
+          <label class="block font-medium text-gray-700">Influenza:</label>
+          <select class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedHealth.influenza">
+            <option value="Aplicada">Aplicada</option>
+            <option value="No aplicada">No aplicada</option>
+            <option value="Sin información">Sin información</option>
+          </select>
+      </div>
+      <div>
+          <label class="block font-medium text-gray-700">Desparasitación:</label>
+          <select class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedHealth.deworming">
+            <option value="Aplicada">Aplicada</option>
+            <option value="No aplicada">No aplicada</option>
+            <option value="Sin información">Sin información</option>
+          </select>
+      </div>
+      <div>
+          <label class="block font-medium text-gray-700">Hemoglobina:</label>
+          <select class="w-full p-2 border border-gray-300 rounded-md" [(ngModel)]="selectedHealth.hemoglobin">
+            <option value="Normal">Normal</option>
+            <option value="Baja">Baja</option>
+            <option  value="Alta">Alta</option>
+            <option value="Sin información">Sin información</option>
+          </select>
+      </div>
+  
+      </div>
+      <div class="mt-6 text-right">
+        <button (click)="saveHealthChanges()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  

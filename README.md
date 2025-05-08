@@ -1,2 +1,2 @@
-# PRS1 -  Frontend_Beneficiarios
+# PRS1 -  Frontend_Beneficiario
 

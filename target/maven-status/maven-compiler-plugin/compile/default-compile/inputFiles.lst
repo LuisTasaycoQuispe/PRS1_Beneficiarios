@@ -1,0 +1,8 @@
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/EducationApplication.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/config/SecurityConfig.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/config/SwaggerConfig.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/model/Education.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/model/dto/EducationDTO.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/repository/EducationRepository.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/rest/EducationController.java
+/workspaces/PRS1_Beneficiarios/src/main/java/pe/edu/vallegrande/education/service/EducationService.java

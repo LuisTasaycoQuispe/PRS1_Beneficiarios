@@ -1,6 +1,9 @@
 package pe.edu.vallegrande.education.model;
 
 import lombok.Data;
+
+import java.time.LocalDate;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
@@ -27,6 +30,12 @@ public class Education {
 
     @Column("educational_assistance")
     private String assistance;
+
+    @Column("school_name")
+    private String schollName;
+
+    @Column("entry_date")
+    private LocalDate entryDate;
 
     @Column("academic_tutorials")
     private String tutorials;

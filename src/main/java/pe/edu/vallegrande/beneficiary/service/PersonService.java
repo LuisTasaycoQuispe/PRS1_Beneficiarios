@@ -19,8 +19,8 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtAut
 @Service
 public class PersonService {
 
-    private static final String EDUCATION_SERVICE_BASE_URL = "https://ms-education.onrender.com";
-    private static final String HEALTH_SERVICE_BASE_URL = "https://ms-health.onrender.com";
+    private static final String EDUCATION_SERVICE_BASE_URL = "https://vg-ms-education.onrender.com";
+    private static final String HEALTH_SERVICE_BASE_URL = "https://vg-ms-health.onrender.com";
 
     @Autowired
     private PersonRepository personRepository;

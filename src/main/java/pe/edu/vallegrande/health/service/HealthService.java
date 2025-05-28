@@ -71,6 +71,8 @@ public class HealthService {
         dto.setInfluenza(health.getInfluenza());
         dto.setDeworming(health.getDeworming());
         dto.setHemoglobin(health.getHemoglobin());
+        dto.setApplicationDate(health.getApplicationDate());
+        dto.setCondicionBeneficiary(health.getCondicionBeneficiary());
         dto.setPersonId(health.getPersonId());
         return dto;
     }
@@ -82,6 +84,9 @@ public class HealthService {
         history.setInfluenza(health.getInfluenza());
         history.setDeworming(health.getDeworming());
         history.setHemoglobin(health.getHemoglobin());
+        
+        history.setApplicationDate(health.getApplicationDate());
+        history.setCondicionBeneficiary(health.getCondicionBeneficiary());
         history.setPersonId(health.getPersonId());
 
         return repository.save(history)
@@ -126,6 +131,9 @@ public class HealthService {
         existingHealth.setInfluenza(health.getInfluenza());
         existingHealth.setDeworming(health.getDeworming());
         existingHealth.setHemoglobin(health.getHemoglobin());
+        
+        existingHealth.setApplicationDate(health.getApplicationDate());
+        existingHealth.setCondicionBeneficiary(health.getCondicionBeneficiary());
 
         return repository.save(existingHealth);
     }

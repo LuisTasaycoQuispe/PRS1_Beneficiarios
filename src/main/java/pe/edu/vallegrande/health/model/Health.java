@@ -3,6 +3,8 @@ package pe.edu.vallegrande.health.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
@@ -26,6 +28,13 @@ public class Health {
 
     @Column("deworming")
     private String deworming;
+
+    @Column("application_date")
+    private LocalDate applicationDate;
+
+    
+    @Column("condicion")
+    private String condicionBeneficiary;
 
     @Column("hemoglobin")
     private String hemoglobin;

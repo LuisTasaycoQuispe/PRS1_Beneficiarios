@@ -1,5 +1,6 @@
 pe/edu/vallegrande/health/model/Health.class
 pe/edu/vallegrande/health/rest/HealthController.class
+pe/edu/vallegrande/health/config/SecurityConfig.class
 pe/edu/vallegrande/health/service/HealthService.class
 pe/edu/vallegrande/health/config/SwaggerConfig.class
 pe/edu/vallegrande/health/model/dto/HealthDTO.class

@@ -46,6 +46,8 @@ public class EducationService {
         dto.setGradeAverage(education.getGradeAverage());
         dto.setFullNotebook(education.getFullNotebook());
         dto.setAssistance(education.getAssistance());
+        dto.setEntryDate(education.getEntryDate());
+        dto.setSchollName(education.getSchollName());
         dto.setTutorials(education.getTutorials());
         dto.setPersonId(education.getPersonId());
         return dto;
@@ -58,6 +60,8 @@ public class EducationService {
         history.setGradeAverage(education.getGradeAverage());
         history.setFullNotebook(education.getFullNotebook());
         history.setAssistance(education.getAssistance());
+        history.setEntryDate(education.getEntryDate());
+        history.setSchollName(education.getSchollName());
         history.setTutorials(education.getTutorials());
         history.setPersonId(education.getPersonId());
 
@@ -85,6 +89,8 @@ public class EducationService {
         existingEducation.setGradeAverage(education.getGradeAverage());
         existingEducation.setFullNotebook(education.getFullNotebook());
         existingEducation.setAssistance(education.getAssistance());
+        existingEducation.setEntryDate(education.getEntryDate());
+        existingEducation.setSchollName(education.getSchollName());
         existingEducation.setTutorials(education.getTutorials());
 
         return repository.save(existingEducation);

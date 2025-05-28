@@ -99,7 +99,6 @@
     		<version>2.5.0</version>
 		</dependency>
 
-		<!-- Seguridad JWT (Firebase) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -114,7 +113,6 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-oauth2-jose</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>

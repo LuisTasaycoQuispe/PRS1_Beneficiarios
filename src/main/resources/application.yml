@@ -7,15 +7,5 @@ spring:
     username: neondb_owner
     password: npg_tGu4yQWLh9jb
 
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://securetoken.google.com/security-prs1
-
-
-
-
 server:
   port: 8087
